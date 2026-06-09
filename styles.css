@@ -600,3 +600,38 @@ fieldset legend{margin-bottom:8px}
   .hero-buttons{width:100%}
   .wide-btn{min-width:0}
 }
+
+
+/* v3 refinements */
+.icon-link,.icon-btn,.button-main-line{display:inline-flex;align-items:center;justify-content:center;gap:9px}
+.icon-svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.problem-card{gap:18px}
+.problem-icon{width:30px;flex:0 0 30px;color:var(--navy);display:flex;align-items:center;justify-content:center}
+.problem-svg{width:29px;height:29px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.line-icon{display:none!important}
+.blue-banner{max-width:720px;font-size:16px;padding:18px 24px;margin-top:46px}
+.number{display:none!important}
+.button-sub-line{display:inline-block}
+.stacked-mobile{gap:8px}
+.footer-contact-line{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
+.file-field{margin:0 0 22px}
+.file-label-text{display:block;color:var(--navy-dark);font-weight:600;margin-bottom:8px;font-size:14px}
+.file-native{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.file-ui{min-height:54px;border:1px solid #cfd9e3;border-radius:6px;margin:4px 0 8px!important;padding:10px 12px;display:flex!important;align-items:center;gap:12px;color:#21364f!important;font-weight:400!important;font-size:15px!important;cursor:pointer}
+.file-button{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:0 13px;border-radius:4px;background:var(--navy);color:#fff;font-weight:500}
+.file-name{color:#2d3e51;font-weight:400}
+@media (max-width:700px){
+  .hero{padding:46px 0 44px;align-items:flex-start}
+  .hero-content{padding-top:0}
+  .eyebrow{font-size:11px;letter-spacing:.12em;margin-bottom:14px;line-height:1.5}
+  .hero-copy{margin:22px 0 24px;line-height:1.55}
+  .services .service-card{text-align:center}
+  .services .gold-line{margin-left:auto;margin-right:auto}
+  .blue-banner{max-width:calc(100% - 10px);font-size:14px;padding:14px 18px;margin-top:40px}
+  .stacked-mobile{flex-direction:column;min-height:64px;gap:7px;line-height:1.15;padding-top:12px;padding-bottom:12px;text-align:center}
+  .stacked-mobile .button-main-line{display:flex;gap:8px}
+  .stacked-mobile .button-sub-line{display:block;font-size:15px}
+  .footer-contact-line{flex-direction:column;gap:8px;margin-top:18px!important}
+  .footer-email,.footer-phone{justify-content:center}
+  .problem-svg{width:25px;height:25px}
+}

@@ -33,3 +33,17 @@ document.querySelectorAll('.faq-item button').forEach((button) => {
     }
   });
 });
+
+
+document.querySelectorAll('.file-native').forEach((input) => {
+  input.addEventListener('change', () => {
+    const wrapper = input.closest('.file-field');
+    const fileName = wrapper?.querySelector('.file-name');
+    if (!fileName) return;
+    if (!input.files || input.files.length === 0) {
+      fileName.textContent = fileName.dataset.default || 'No file selected';
+      return;
+    }
+    fileName.textContent = input.files.length === 1 ? input.files[0].name : `${input.files.length} files selected`;
+  });
+});
